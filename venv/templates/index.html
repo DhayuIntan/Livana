@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Livana</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{url_for('static', filename='assets/img/livana2.png')}}" rel="icon">
+  <link href="{{url_for('static', filename='assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/aos/aos.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{{url_for('static', filename='assets/css/main.css')}}" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+<head>
+  <style>
+    .navmenu ul li a.active {
+      color: rgb(255, 255, 0);
+    }
+  </style>
+</head>
+<body>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="{{ url_for('index') }}" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename"></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{{ url_for('index') }}#hero" class="">Home</a></li>
+          <li><a href="{{ url_for('index') }}#about">About</a></li>
+          <li><a href="{{ url_for('index') }}#services">Input</a></li>
+          <li><a href="{{ url_for('index') }}#word-cloud">Word Cloud</a></li>
+          <li><a href="{{ url_for('index') }}#team">Team</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+</body>
+</html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livana</title>
+  <style>
+    /* Define a class for changing the background color */
+    .bg-custom {
+      background-color: #0f0036; /* Change this to the desired color */
+    }
+
+    /* Optional: Additional styling for better visual appearance */
+    .hero.section {
+      padding: 90px 0;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero section bg-custom">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 class="">A Sentiment Analysis</h1>
+          <p class="">Of Mobile Banking Service Reviews</p>
+          <div class="d-flex">
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-5 livin">
+          <img src="{{url_for('static', filename='assets/img/livana2.png')}}" class="img-fluid animated" alt="" style="margin-left: 40px; width: 150%;">
+        </div>
+        
+      </div>
+    </div>
+
+  </section><!-- /Hero Section -->
+
+</body>
+</html>
+
+    <!-- Clients 2 Section -->
+    <section id="clients-2" class="clients-2 section">
+
+      <div class="container">
+
+        <div class="swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 120
+                },
+                "1200": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+        </div>
+      </div>
+    </section><!-- /Clients 2 Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 class="">About</h2>
+        <p class="">"Livana : A Sentiment Analysis of Mobile Banking Service Reviews"</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content text-justify" data-aos="fade-up" data-aos-delay="100">
+            <p>Livana was created in response to the need for in-depth sentiment analysis of user feedback on the Livin by Mandiri
+              application. With over 10 million downloads and more than 542,000 reviews on the Google Play Store, it is essential to
+              thoroughly understand user opinions about the app.</p>
+          </div>
+        
+          <div class="col-lg-6 text-justify" data-aos="fade-up" data-aos-delay="200">
+            <p>Livana utilizes artificial intelligence and natural language processing technology to extract valuable insights from
+              user reviews, assisting the banking industry in improving their services. With Livana, banks can identify areas for
+              improvement, strengthen system advantages, and enhance customer satisfaction, all based on accurate and comprehensive
+              analysis of user sentiment.</p>
+          </div>
+        
+        </div>
+        
+
+      </div>
+
+    </section><!-- /About Section -->
+
+<!-- Input Section -->
+<section id="services" class="services section center-content">
+  <!-- Input Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Input</h2>
+  </div><!-- End Section Title -->
+
+  <div class="container center-content">
+    <div class="row gy-4 justify-content-center">
+      <!-- Kolom masukkan komentar -->
+      <div class="col-xl-8 col-md-10 d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative w-100 p-4" style="background-color: #fff; border-radius: 8px;">
+          <div class="icon"><i class="bi bi-activity icon"></i></div>
+          <h4><a href="">Add Comments</a></h4>
+          <form method="post" id="commentForm">
+            <div class="mb-3">
+              <input type="text" name="inp" class="form-control" id="commentInput" placeholder="Tulis komentar Anda di sini">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div><!-- End Kolom masukkan komentar -->
+      
+      <!-- Kolom hasil komentar -->
+      <div class="col-xl-8 col-md-10" id="commentResult" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item position-relative w-100 p-4" style="background-color: #fff; border-radius: 8px;">
+          <h4>The analysis results</h4>
+          <div id="commentAnalysis">
+            <p>Comment: {{ inp }}</p>
+            <p>Result: {{ result }}</p>
+          </div>
+        </div>
+      </div><!-- End Kolom hasil komentar -->
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('commentForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Mencegah form submit default
+      const comment = document.getElementById('commentInput').value.trim(); // Mengambil nilai input dan trim
+      if (comment !== "") { // Cek jika komentar tidak kosong
+        // Memanggil fungsi untuk analisis komentar
+        analyzeComment(comment);
+      }
+    });
+  
+    function analyzeComment(comment) {
+      console.log(comment);
+        fetch("/", { // Melakukan permintaan POST ke endpoint "/"
+          method: "POST",
+          body: JSON.stringify({
+            inp: comment
+          }),
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        })
+        .then(rs => rs.text())
+          .then(data => {
+            // Mengambil hasil analisis dari respons JSON yang diterima dari server Flask
+            let resultText = data;
+            console.log(resultText);
+
+            // Menyesuaikan gaya teks berdasarkan nilai resultText
+            if (resultText.toLowerCase() === "positive") {
+              resultText = "<span style='color: blue; font-weight: bold; text-transform: uppercase; font-size: 1.5em;'>Positive</span>";
+            } else if (resultText.toLowerCase() === "negative") {
+              resultText = "<span style='color: red; font-weight: bold; text-transform: uppercase; font-size: 1.5em;'>Negative</span>";
+            }
+
+            // Menampilkan hasil analisis di kolom hasil komentar
+            const commentAnalysis = document.getElementById('commentAnalysis');
+            commentAnalysis.innerHTML = `<p>Komentar: ${comment}</p><p>Hasil Analisis: ${resultText}</p>`;
+
+            // Menampilkan kolom hasil komentar
+            document.getElementById('commentResult').classList.remove('d-none');
+          })
+          .catch(error => {
+            console.error('Error:', error);
+          });
+      }
+  </script>
+
+</section><!-- /Input Section -->
+
+<!-- Word Cloud Section -->
+<section id="word-cloud" class="word-cloud section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2 class="">Word Cloud</h2>
+    <p class=""> </p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- Negative Sentiment Word Cloud -->
+      <div class="col-lg-6 content text-justify" data-aos="fade-up" data-aos-delay="50">
+        <h3 class="text-center">Negative Sentiment</h3>
+        <!-- Image for Negative Sentiment Word Cloud -->
+        <img src="{{ url_for('static', filename='assets/img/negatif.png') }}" alt="Negative Sentiment Word Cloud" class="img-fluid">
+      </div>
+
+      <!-- Positive Sentiment Word Cloud -->
+      <div class="col-lg-6 text-justify" data-aos="fade-up" data-aos-delay="50">
+        <h3 class="text-center">Positive Sentiment</h3>
+        <!-- Image for Positive Sentiment Word Cloud -->
+        <img src="{{ url_for('static', filename='assets/img/positif.png') }}" alt="Positive Sentiment Word Cloud" class="img-fluid">
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Word Cloud Section -->
+
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="pic"><img src="{{ url_for('static', filename='assets/img/team/satrioo.jpg') }}" class="img-fluid" alt="Satrio Wibowo Budhoyono"></div>
+              <div class="member-info">
+                <h4>Satrio Wibowo Budhoyono</h4>
+                <h6>Universitas Negeri Malang</h6> 
+                <span>Data Engineer</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <div class="pic"><img src="{{ url_for('static', filename='assets/img/team/dhayuu.jpg') }}" class="img-fluid" alt="Dhayu Intan Nareswari"></div>
+              <div class="member-info">
+                <h4>Dhayu Intan Nareswari</h4>
+                <h6>Politeknik Negeri Malang</h6>
+                <span>ML Engineer</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member">
+              <div class="pic"><img src="{{ url_for('static', filename='assets/img/team/rahmii.jpg') }}" class="img-fluid" alt="Halimatur Rahmi"></div>
+              <div class="member-info">
+                <h4>Halimatur Rahmi</h4>
+                <h6>Universitas Sari Mulia</h6>
+                <span>Frontend Engineer</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="pic"><img src="{{ url_for('static', filename='assets/img/team/faskinann.jpg') }}" class="img-fluid" alt="Faskinan Ahmad Ad Daffa"></div>
+              <div class="member-info">
+                <h4>Faskinan Ahmad Ad Daffa</h4>
+                <h6>Akademi Komunitas Negeri Putra Sang Fajar Blitar</h6>
+                <span>Backend Engineer</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="pic"><img src="{{ url_for('static', filename='assets/img/team/zainalll.jpg') }}" class="img-fluid" alt="Zainal Arifin"></div>
+              <div class="member-info">
+                <h4>Zainal Arifin</h4>
+                <h6>Institut Teknnologi Telkom Surabaya</h6>
+                <span>UI/UX Designer</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="pic"><img src="{{ url_for('static', filename='assets/img/team/nikennn.jpg') }}" class="img-fluid" alt="Niken Evi Novita Sari"></div>
+              <div class="member-info">
+                <h4>Niken Evi Novita Sari</h4>
+                <h6>Universitas Islam Kediri</h6>
+                <span>Technical Writter</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+        </div>
+      </div>
+
+      <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+          .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px; /* Optional: for spacing between team members */
+          }
+      
+          .team-member .pic {
+            width: 150px; /* Set the width */
+            height: 150px; /* Set the height */
+            overflow: hidden; /* Hide the overflow */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%; /* Make the container circular */
+            margin-right: 20px; /* Margin between image and text */
+          }
+      
+          .team-member .pic img {
+            width: 100%; /* Ensure the image covers the container */
+            height: 100%; /* Ensure the image covers the container */
+            object-fit: cover; /* Make sure the image maintains aspect ratio */
+            border-radius: 50%; /* Make the image circular */
+          }
+      
+          .member-info {
+            text-align: left; /* Align text to the left */
+          }
+      
+          .member-info h4, .member-info span {
+            margin: 0; /* Remove default margins */
+          }
+        </style>
+      </head>
+    </section><!-- /Team Section -->
+  </main>
+
+  <!-- Bootstrap JS and dependencies (Optional for AOS animation) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+  <footer id="footer" class="footer">
+    <div class="container copyright text-center">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Livana Team</strong> <span>All Rights Reserved</span></p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/aos/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/waypoints/noframework.waypoints.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+
+  <!-- Main JS File -->
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+</body>
+</html>
