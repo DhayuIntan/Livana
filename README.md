@@ -16,8 +16,8 @@
 - Background: This section provides information about the reasons for developing the Livana project.
 - Goals: This section explains what the Livana project hopes to achieve, as well as the benefits it hopes to provide to users.
 
-<h2>Input</h2>
-<img src="pict/input.png" alt="Input">
+<h2>App</h2>
+<img src="pict/input.png" alt="App">
 <p>
 
 - Add Comments: In this section, users can enter comments.
